@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Inline local variable &apos;com.data.project.VariableArgument.main(...).ar&apos; in &apos;com.data.project.VariableArgument.main(...)&apos;&#x0D;&#x0A;- Original project: &apos;ClassProject&apos;&#x0D;&#x0A;- Original element: &apos;com.data.project.VariableArgument.main(...).ar&apos;" description="Inline local variable &apos;ar&apos;" id="org.eclipse.jdt.ui.inline.temp" input="/src&lt;com.data.project{VariableArgument.java" selection="274 0" stamp="1685839418564" version="1.0"/>
+</session>

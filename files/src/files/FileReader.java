@@ -1,0 +1,31 @@
+package files;
+
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.util.List;
+
+public class FileReader {
+
+	public static void main(String[] args) throws IOException {
+		// TODO Auto-generated method stub
+		Path currentpath=Paths.get("./Directory/data.txt");
+//		List<String> datas=Files.readAllLines(currentpath);
+//		System.out.print(datas);
+		
+		
+	//	Files.lines(currentpath).forEach(x->System.out.println(x));
+		//Files.lines(currentpath).map(x->x.toUpperCase()).forEach(x->System.out.println(x));
+	//	Files.lines(currentpath).filter(x->x.contains("a")).map(x->x.toUpperCase()).forEach(x->System.out.println(x));
+
+		
+		Files.lines(currentpath).forEach(System.out::println);
+	System.out.println("*********************");
+		Files.lines(currentpath).map(String::toUpperCase).forEach(System.out::println);
+		System.out.println("*********************");
+		Files.lines(currentpath).filter(x->x.contains("a")).map(String::toUpperCase).forEach(System.out::println);
+		
+	}
+
+}

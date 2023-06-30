@@ -1,0 +1,19 @@
+package files;
+
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+
+public class DirectoryClassFile {
+
+	public static void main(String[] args) throws IOException {
+		// TODO Auto-generated method stub
+//		Files.list(Paths.get(".")).forEach(x->System.out.println(x));
+		Path Direc=Paths.get(".");
+		//Files.list(Direc).forEach(System.out::println);
+		Files.walk(Direc, 4).forEach(System.out::println);
+
+	}
+
+}

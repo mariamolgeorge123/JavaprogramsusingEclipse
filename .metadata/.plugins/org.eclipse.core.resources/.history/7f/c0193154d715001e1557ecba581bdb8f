@@ -1,0 +1,28 @@
+package com.exception;
+
+public class Execption {
+	public static void main(String[] args) {
+		System.out.println("hai");
+		Data d=new Data();
+		d.data();
+		
+	}
+	
+
+}
+class Data
+{
+	public void data()
+	{
+		try
+		{
+		String a=" ";
+		System.out.println("data is"+a.length());
+		System.out.println("data is"+"hai".length());
+		}
+		catch(Exception e)
+		{
+			System.out.println("Exception is"+e);
+		}
+	}
+}
